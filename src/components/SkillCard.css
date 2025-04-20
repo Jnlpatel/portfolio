@@ -1,0 +1,112 @@
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--skill-color, #6c63ff);
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #2d3748;
+  }
+  
+  .skill-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+  
+  .years {
+    font-size: 0.8rem;
+    color: #718096;
+    background: #f7fafc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .proficiency-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    background: var(--skill-color, #6c63ff);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+  
+  .skill-visualization {
+    margin-top: 1rem;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background: #edf2f7;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: width 0.5s ease, background-color 0.3s ease;
+  }
+  
+  .percentage-label {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skill-level-markers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #a0aec0;
+  }
+  
+  /* Category-based colors */
+  .skill-card[data-category="Frontend"] {
+    --skill-color: #6c63ff;
+  }
+  
+  .skill-card[data-category="Backend"] {
+    --skill-color: #4CAF50;
+  }
+  
+  .skill-card[data-category="Database"] {
+    --skill-color: #2196F3;
+  }
+  
+  .skill-card[data-category="DevOps"] {
+    --skill-color: #FF9800;
+  }
+  
+  .skill-card[data-category="Design"] {
+    --skill-color: #E91E63;
+  }
