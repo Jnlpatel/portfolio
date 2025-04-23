@@ -21,14 +21,14 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/experience">Experience</a></li>
           </ul>
         </div>
         
         <div className="footer-social">
-          <h4>Connect Me</h4>
+          <h4>Contact Me</h4>
           <div className="social-icons">
             {myInfo?.github && (
               <a href={myInfo.github} target="_blank" rel="noopener noreferrer">
@@ -45,7 +45,6 @@ export default function Footer() {
                 <i className="fas fa-envelope"></i>
               </a>
             )}
-            {/* Add more social links as needed */}
           </div>
         </div>
       </div>

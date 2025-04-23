@@ -46,15 +46,13 @@ export default function Home() {
           
           <h2 className="hero-subtitle">{myInfo.role}</h2>
           <h3 className="hero-tagline">
-            {myInfo.tagline || "Crafting beautiful and functional web applications."} 
+            {myInfo.info || "Crafting beautiful and functional web applications."} 
           </h3>
          
           <div className="hero-actions">
-            <a href="/skills" className="cta-button">
-              <i className="fas fa-code"></i> View Skills
-            </a>
+            
             <a href="/projects" className="cta-button secondary">
-              <i className="fas fa-project-diagram"></i> View Projects
+              <i className="fas fa-project-diagram"></i> View My Work
             </a>
           </div>
         </div>
@@ -81,17 +79,34 @@ export default function Home() {
         <div className="about-content">
           <div className="about-text">
             <p className="intro-text">{myInfo.bio || "I'm passionate about creating beautiful, functional web applications that solve real problems."}</p>
-          </div>
           
+          </div>
+      
           <div className="about-highlights">
             <div className="highlight-card">
               <i className="fas fa-medal"></i>
               <h3>Experience</h3>
               <p>{myInfo.experienceYears || '2+'} years in web development</p>
             </div>
-            
-            
+            <div className="home-icons">
+            {myInfo?.github && (
+              <a href={myInfo.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github" title='GitHub'></i>
+              </a>
+            )}
+            {myInfo?.linkedin && (
+              <a href={myInfo.linkedin} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin-in" title='LinkedIn'></i>
+              </a>
+            )}
+            {myInfo?.email && (
+              <a href={`mailto:${myInfo.email}`}>
+                <i className="fas fa-envelope" title='Email'></i>
+              </a>
+            )}
           </div>
+          </div>
+          
         </div>
       </section>
     </div>

@@ -42,7 +42,6 @@ export default function App() {
           <Route path="skills" element={<Skills />} />
           <Route path="experience" element={<Experience />} />
           <Route path="education" element={<Education />} />
-          <Route path="contact" element={<Contacts />} />
         </Route>
       </Routes>
               <Footer />

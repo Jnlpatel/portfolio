@@ -52,7 +52,9 @@
 }
 
 .hero-actions {
-  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* display: flex; */
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -62,7 +64,7 @@
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 0.8rem;
   transition: all 0.3s ease;
@@ -218,6 +220,24 @@
   border-top: 5px solid var(--primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
+}
+
+.home-icons  {
+  text-align: center ;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-icons  a {
+  color: #6c63ff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.home-icons a:hover {
+  color: #6c63ff;
+  transform: translateY(-3px);
 }
 
 @keyframes spin {
